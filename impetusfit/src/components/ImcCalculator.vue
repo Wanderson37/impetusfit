@@ -1,7 +1,5 @@
 <template>
   <div class="imc-calculator">
-    <h1>Calculadora de IMC</h1>
-
     <!-- Formulário -->
     <form @submit.prevent="calculateIMC">
       <div class="input-group">
