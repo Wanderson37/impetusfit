@@ -2,7 +2,7 @@
   <q-layout view="hHh lpr fFf">
     <HeaderPage />
     <ImcCalculator />
-    <BodyFatCalculator />>
+    <BodyFatCalculator />
   </q-layout>
 </template>
 

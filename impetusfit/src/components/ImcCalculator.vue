@@ -111,7 +111,7 @@ const resetIMC = () => {
 .btn {
   padding: 10px 20px;
   margin-right: 10px;
-  background-color: #007bff;
+  background-color: var(--q-primary);
   color: white;
   border: none;
   cursor: pointer;

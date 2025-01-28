@@ -1,9 +1,8 @@
-// stores/bodyFatStore.js
 import { defineStore } from "pinia";
 
 export const useBodyFatStore = defineStore("bodyFat", {
   state: () => ({
-    gender: "male",
+    gender: "",
     height: null,
     neck: null,
     waist: null,
@@ -34,6 +33,14 @@ export const useBodyFatStore = defineStore("bodyFat", {
               0.221 * Math.log10(h * 100)) -
           450;
       }
+    },
+    resetBodyFat() {
+      this.gender = "";
+      this.height = null;
+      this.neck = null;
+      this.waist = null;
+      this.hip = null;
+      this.bodyFat = null;
     },
   },
 });
