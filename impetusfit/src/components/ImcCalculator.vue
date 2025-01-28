@@ -68,6 +68,7 @@ const resetIMC = () => {
 .imc-calculator {
   max-width: 400px;
   margin: auto;
+
   text-align: center;
   font-family: Arial, sans-serif;
 }

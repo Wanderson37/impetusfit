@@ -1,6 +1,8 @@
 <template>
-  <HeaderPage />
-  <ImcCalculator />
+  <q-layout view="hHh lpr fFf">
+    <HeaderPage />
+    <ImcCalculator
+  /></q-layout>
 </template>
 
 <script setup>
