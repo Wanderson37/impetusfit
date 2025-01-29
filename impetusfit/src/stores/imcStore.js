@@ -20,8 +20,12 @@ export const useImcStore = defineStore("imc", {
           this.category = "Peso normal";
         } else if (this.imc < 29.9) {
           this.category = "Sobrepeso";
+        } else if (this.imc < 34.9) {
+          this.category = "Obesidade grau 1";
+        } else if (this.imc < 39.9) {
+          this.category = "Obesidade grau 2 (severa)";
         } else {
-          this.category = "Obesidade";
+          this.category = "Obesidade grau 3 (mórbida)";
         }
       }
     },
