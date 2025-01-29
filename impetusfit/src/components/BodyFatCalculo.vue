@@ -1,6 +1,7 @@
 <template>
-  <section class="info-section">
-    <h2>📌 Cálculo de Gordura Corporal – Método da Marinha Americana</h2>
+  <section id="gordura-corporal" class="info-section">
+    <h2>Cálculo de Gordura Corporal</h2>
+    <h4>Método da Marinha Americana</h4>
 
     <p>
       A fórmula da Marinha Americana é um método amplamente utilizado para
@@ -11,7 +12,7 @@
     </p>
 
     <div class="formula-box">
-      <h3>🧑 Fórmula para Homens</h3>
+      <h3>Fórmula para Homens</h3>
       <p>
         O cálculo leva em conta a
         <strong>circunferência do pescoço e da cintura</strong>, além da altura.
@@ -23,7 +24,7 @@
     </div>
 
     <div class="formula-box">
-      <h3>👩 Fórmula para Mulheres</h3>
+      <h3>Fórmula para Mulheres</h3>
       <p>
         No caso das mulheres, a circunferência do
         <strong>quadril</strong> também é considerada.
@@ -34,7 +35,7 @@
       </pre>
     </div>
 
-    <h3>🔎 Exemplo de Cálculo</h3>
+    <h3>Exemplo de Cálculo</h3>
     <p><strong>Para um homem:</strong></p>
     <ul>
       <li>Altura: 175 cm</li>
@@ -56,7 +57,7 @@
       </li>
     </ul>
 
-    <h3>⚠️ Considerações Importantes</h3>
+    <h3>Considerações Importantes</h3>
     <ul>
       <li>
         ✔️ Este método é uma <strong>estimativa</strong> e pode não ser 100%
@@ -84,9 +85,9 @@
     <span>
       <p>
         <strong>Fonte: </strong>
-        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6650177/"
-          >Comparison of Bioelectrical Impedance and Navy Seal Formula to
-          Measure Body Composition in Medical Students
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6650177/">
+          Comparison of Bioelectrical Impedance and Navy Seal Formula to Measure
+          Body Composition in Medical Students
         </a>
       </p>
     </span>
@@ -98,7 +99,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background: #f9f9f9;
+
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
@@ -107,31 +108,34 @@
 h2 {
   text-align: center;
   font-size: 1.8rem;
-  color: #333;
+  margin: 0px;
+}
+h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0px;
+  margin-bottom: 20px;
 }
 
 p {
   font-size: 1rem;
-  color: #555;
+
   line-height: 1.5;
 }
 
 .formula-box {
-  background: #e3f2fd;
   padding: 15px;
-  border-left: 5px solid #2196f3;
+
   border-radius: 5px;
   margin-bottom: 15px;
 }
 
 h3 {
-  color: #222;
   font-size: 1.4rem;
   margin-bottom: 8px;
 }
 
 pre {
-  background: #ddd;
   padding: 10px;
   border-radius: 5px;
   font-size: 1rem;
@@ -144,11 +148,8 @@ ul {
 }
 
 ul li {
-  background: url("https://cdn-icons-png.flaticon.com/16/845/845646.png") left
-    center no-repeat;
   background-size: 16px;
   padding-left: 25px;
   margin-bottom: 5px;
-  color: #444;
 }
 </style>

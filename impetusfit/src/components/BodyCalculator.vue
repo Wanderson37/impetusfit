@@ -1,6 +1,6 @@
 <template>
-  <section>
-    <h2 class="text-center">Calculadora de Corpo</h2>
+  <section id="calculadora">
+    <h2 class="text-center">Calculadora</h2>
     <form @submit.prevent="calculateAll">
       <div class="form-group">
         <label for="gender">Gênero:</label>

@@ -1,6 +1,6 @@
 <template>
-  <section class="info-section">
-    <h2>📌 Cálculo do Índice de Massa Corporal (IMC)</h2>
+  <section id="imc" class="info-section">
+    <h2>Cálculo do Índice de Massa Corporal (IMC)</h2>
 
     <p>
       O <strong>Índice de Massa Corporal (IMC)</strong> é um parâmetro utilizado
@@ -9,7 +9,7 @@
     </p>
 
     <div class="formula-box">
-      <h3>🧮 Fórmula do IMC</h3>
+      <h3>Fórmula do IMC</h3>
       <p>O IMC é calculado dividindo o peso pela altura ao quadrado:</p>
       <pre>
 IMC = Peso (kg) ÷ Altura² (m²)
@@ -17,7 +17,7 @@ IMC = Peso (kg) ÷ Altura² (m²)
     </div>
 
     <div class="formula-box">
-      <h3>📊 Classificação do IMC</h3>
+      <h3>Classificação do IMC</h3>
       <p>
         Segundo a **Organização Mundial da Saúde (OMS)**, o IMC se encaixa em
         diferentes categorias:
@@ -32,7 +32,7 @@ IMC = Peso (kg) ÷ Altura² (m²)
       </ul>
     </div>
 
-    <h3>🔎 Exemplo de Cálculo</h3>
+    <h3>Exemplo de Cálculo</h3>
     <p><strong>Para uma pessoa com 75kg e 1.75m de altura:</strong></p>
     <pre>
 IMC = 75 ÷ (1.75 × 1.75) 
@@ -40,7 +40,7 @@ IMC = 75 ÷ 3.0625
 IMC = 24.5 (Peso normal)
     </pre>
 
-    <h3>⚠️ Considerações Importantes</h3>
+    <h3>Considerações Importantes</h3>
     <ul>
       <li>
         ✔️ O IMC **não distingue massa magra de gordura**, podendo não ser ideal
@@ -81,8 +81,8 @@ IMC = 24.5 (Peso normal)
 .info-section {
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 100px;
   padding: 20px;
-  background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
@@ -91,31 +91,27 @@ IMC = 24.5 (Peso normal)
 h2 {
   text-align: center;
   font-size: 1.8rem;
-  color: #333;
 }
 
 p {
   font-size: 1rem;
-  color: #555;
+
   line-height: 1.5;
 }
 
 .formula-box {
-  background: #e3f2fd;
   padding: 15px;
-  border-left: 5px solid #2196f3;
+
   border-radius: 5px;
   margin-bottom: 15px;
 }
 
 h3 {
-  color: #222;
   font-size: 1.4rem;
   margin-bottom: 8px;
 }
 
 pre {
-  background: #ddd;
   padding: 10px;
   border-radius: 5px;
   font-size: 1rem;
@@ -128,11 +124,8 @@ ul {
 }
 
 ul li {
-  background: url("https://cdn-icons-png.flaticon.com/16/845/845646.png") left
-    center no-repeat;
   background-size: 16px;
   padding-left: 25px;
   margin-bottom: 5px;
-  color: #444;
 }
 </style>
