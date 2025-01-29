@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh lpr fFf">
     <HeaderPage />
-    <ImcCalculator />
+    <ImcCalculo />
     <BodyFatCalculo />
     <BodyCalculator />
   </q-layout>
@@ -10,7 +10,7 @@
 <script setup>
 import BodyFatCalculo from "./BodyFatCalculo.vue";
 import HeaderPage from "./HeaderPage.vue";
-import ImcCalculator from "./ImcCalculator.vue";
+import ImcCalculo from "./ImcCalculo.vue";
 import BodyCalculator from "./BodyCalculator.vue";
 </script>
 <style scoped></style>

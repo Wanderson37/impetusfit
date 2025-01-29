@@ -81,6 +81,15 @@
       condicionamento físico, mas também pode ser útil para quem deseja
       acompanhar sua <strong>evolução corporal</strong>.
     </p>
+    <span>
+      <p>
+        <strong>Fonte: </strong>
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6650177/"
+          >Comparison of Bioelectrical Impedance and Navy Seal Formula to
+          Measure Body Composition in Medical Students
+        </a>
+      </p>
+    </span>
   </section>
 </template>
 

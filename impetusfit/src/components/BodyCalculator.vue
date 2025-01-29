@@ -27,8 +27,8 @@
       </div>
 
       <div class="form-group">
-        <label for="waist">Peso:</label>
-        <input type="number" v-model="weight" id="waist" required />
+        <label for="weight">Peso:</label>
+        <input type="number" v-model="weight" id="weight" required />
       </div>
 
       <div v-if="gender === 'female'" class="form-group">
