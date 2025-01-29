@@ -65,15 +65,15 @@ button:focus-visible {
   text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+body.light-theme {
+  color: #213547;
+  background-color: #ffffff;
+}
+
+body.light-theme a:hover {
+  color: #747bff;
+}
+
+body.light-theme button {
+  background-color: #f9f9f9;
 }

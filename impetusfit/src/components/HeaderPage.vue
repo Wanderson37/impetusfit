@@ -8,6 +8,8 @@
       <q-btn class="logo-header" flat round dense>
         <img src="impetus-logo.svg" alt="Impetus Fit" />
       </q-btn>
+      <q-space />
+      <button class="round-star-label" @click="toggleTheme">Trocar Tema</button>
     </q-toolbar>
 
     <q-tabs v-model="tab">
@@ -20,6 +22,7 @@
     </q-tabs>
   </q-header>
 </template>
+
 <script setup>
 import { ref } from "vue";
 
@@ -31,7 +34,12 @@ function scrollTo(id) {
     element.scrollIntoView({ behavior: "smooth" });
   }
 }
+
+function toggleTheme() {
+  document.body.classList.toggle("light-theme");
+}
 </script>
+
 <style scoped>
 .header {
   position: fixed;
@@ -45,13 +53,5 @@ function scrollTo(id) {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  text-align: center;
-  width: auto;
-  font-size: 3rem;
-  font-style: italic;
-  padding: 0;
-  background: linear-gradient(to bottom, var(--q-primary), var(--q-secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 </style>
