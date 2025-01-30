@@ -39,18 +39,19 @@
         <button type="submit" class="calculate-btn">Calcular</button>
       </div>
     </form>
-
-    <div v-if="bodyFat !== null" class="result">
-      <h3>Resultado:</h3>
-      <p>
-        Sua porcentagem de gordura corporal é aproximadamente
-        <strong>{{ bodyFat.toFixed(2) }}%.</strong>
-      </p>
-    </div>
-    <div v-if="imc" class="result">
-      <p><strong>IMC:</strong> {{ imc }}</p>
-      <p><strong>Categoria:</strong> {{ category }}</p>
-    </div>
+    <Transition name="slide-fade">
+      <div v-if="bodyFat !== null" class="result">
+        <h3>Resultado:</h3>
+        <p>
+          Sua porcentagem de gordura corporal é aproximadamente
+          <strong>{{ bodyFat.toFixed(2) }}%.</strong>
+        </p>
+        <p>
+          <strong>IMC:</strong> {{ imc }} <strong> Categoria:</strong>
+          {{ category }}
+        </p>
+      </div>
+    </Transition>
   </section>
 </template>
 
@@ -98,6 +99,19 @@ watch(height, (newHeight) => {
 });
 </script>
 <style scoped>
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
 h2 {
   font-size: 1.8rem;
 }
