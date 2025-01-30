@@ -99,7 +99,6 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
@@ -119,13 +118,11 @@ h4 {
 
 p {
   font-size: 1rem;
-
   line-height: 1.5;
 }
 
 .formula-box {
   padding: 15px;
-
   border-radius: 5px;
   margin-bottom: 15px;
 }
