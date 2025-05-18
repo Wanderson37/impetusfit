@@ -1,12 +1,10 @@
 <template>
   <q-header class="header bg-dark">
     <q-toolbar>
-      <q-toolbar-title class="text-weight-bolder center-title">
-        Impetus Fit
-      </q-toolbar-title>
+      <q-toolbar-title class="text-weight-bolder center-title"> Impetus Fit </q-toolbar-title>
 
       <q-btn class="logo-header button" flat round dense>
-        <img src="impetus-logo.svg" alt="Impetus Fit" />
+        <img src="/impetus-logo.svg" alt="Impetus Fit" />
       </q-btn>
       <q-space />
       <button class="button" @click="toggleTheme">Trocar Tema</button>
@@ -19,29 +17,25 @@
         label="Gordura Corporal"
         @click="scrollTo('gordura-corporal')"
       />
-      <q-tab
-        name="calculadora"
-        label="Calculadora"
-        @click="scrollTo('calculadora')"
-      />
+      <q-tab name="calculadora" label="Calculadora" @click="scrollTo('calculadora')" />
     </q-tabs>
   </q-header>
 </template>
 
-<script setup>
-import { ref } from "vue";
+<script setup lang="ts">
+import { ref } from 'vue'
 
-const tab = ref("imc");
+const tab = ref('imc')
 
-function scrollTo(id) {
-  const element = document.getElementById(id);
+function scrollTo(id: string) {
+  const element = document.getElementById(id)
   if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
+    element.scrollIntoView({ behavior: 'smooth' })
   }
 }
 
 function toggleTheme() {
-  document.body.classList.toggle("light-theme");
+  document.body.classList.toggle('light-theme')
 }
 </script>
 
