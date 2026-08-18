@@ -14,8 +14,6 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.16.17",
-    "dotenv": "^8.2.0",
-    "node-fetch": "^3.3.2",
     "pinia": "^3.0.1",
     "quasar": "^2.18.1",
     "vue": "^3.5.13",
